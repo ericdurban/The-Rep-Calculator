@@ -1,7 +1,6 @@
 {
   "name": "the-rep-calculator",
   "homepage": "https://ericdurban.github.io/The-Rep-Calculator/",
-  "description": "A simple calculator for calculating the number of repetitions you can do at a given weight based on your one-rep max.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
