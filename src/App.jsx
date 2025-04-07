@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
@@ -128,7 +126,7 @@ function App() {
           <input type="number" id="restTimeSec" value={restDurationSec} onChange={(e) => setRestDurationSec(e.target.value)} placeholder='-- Enter Rest Time --'></input>
           <input type="number" id="restTimeMin" value={restDurationMin} onChange={(e) => setRestDurationMin(e.target.value)} placeholder='-- Enter Rest Time --'></input>
           <label htmlFor="totalRepTime">Rep Cycle Duration</label>
-          <input type="number" id="totalRepTime" value={repCycleCount} onChange={(e) => setRepCycleCount(e.target.value)} placeholder='-- Enter Rep Cycle --' style={{gridColumn: '4', gridRow: '2 / span 2'}}></input>
+          <input type="number" id="totalRepTime" value={repCycleCount} onChange={(e) => setRepCycleCount(e.target.value)} placeholder='-- Enter Rep Cycle --'></input>
           <p className='placeholder2'></p>
           <button type='submit' className='generateBtn'>Generate</button>
         </form>
