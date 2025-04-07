@@ -11,5 +11,5 @@ export default defineConfig({
       ]
     }),
   ],
-  base: '/The-Rep-Calculator/',
+  base: "/The-Rep-Calculator",
 });

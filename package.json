@@ -1,5 +1,7 @@
 {
   "name": "the-rep-calculator",
+  "homepage": "https://ericdurban.github.io/The-Rep-Calculator/",
+  "description": "A simple calculator for calculating the number of repetitions you can do at a given weight based on your one-rep max.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
