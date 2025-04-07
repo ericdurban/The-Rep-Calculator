@@ -6,7 +6,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/The-Rep-Calculator/">
+    <BrowserRouter basename="/The-Rep-Calculator">
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>
