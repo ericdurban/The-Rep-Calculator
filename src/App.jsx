@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
-import Calculator from './assets/components/calculator';
 
 function App() {
   const [repDurationSec, setRepDurationSec] = useState('');

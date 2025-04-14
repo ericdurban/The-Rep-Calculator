@@ -1,6 +1,6 @@
 {
-  "name": "the-rep-calculator-website",
-  "homepage": "https://ericdurban.github.io/The-Rep-Calculator",
+  "name": "the-rep-calculator",
+  "homepage": "https://ericdurban.github.io/The-rep-calculator",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
