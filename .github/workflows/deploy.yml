@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 
+          node-version: 18
 
       - name: Clear npm cache
         run: npm cache clean --force
@@ -45,6 +45,12 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: './dist'
+
+      - name: Upload build as artifact (fix for deploy)
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: dist
 
       - name: Deploy to GitHub Pages
         id: deployment
