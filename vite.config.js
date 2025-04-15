@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
   },
   optimizeDeps: {
     include: ['crypto'],
+    exclude: ['crypto-browserify'],
   },
   build: {
     rollupOptions: {
