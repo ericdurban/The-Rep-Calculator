@@ -13,6 +13,9 @@ export default defineConfig(({ mode }) => ({
     },
     extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'] // Explicitly define extensions
   },
+  define: {
+    'process.env.NODE_ENV': JSON.stringify(mode),
+  },
   build: {
     rollupOptions: {
       plugins: [
