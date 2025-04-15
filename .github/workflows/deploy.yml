@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16 # Use the Node.js version compatible with your project
+          node-version: 18
 
       - name: Clear npm cache
         run: npm cache clean --force
