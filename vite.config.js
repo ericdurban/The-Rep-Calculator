@@ -1,12 +1,18 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
-export default defineConfig({
-  plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/The-rep-calculator/' : '/',
+export default defineConfig(({ mode }) => ({
+  plugins: [
+    react(),
+    nodePolyfills({
+      crypto: true,
+    }),
+  ],
+  base: mode === 'production' ? '/The-rep-calculator/' : '/',
   resolve: {
     alias: {
         '@': '/src',
     },
   },
-});
+}));
